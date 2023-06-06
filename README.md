@@ -1,6 +1,8 @@
-# nathan-rc-rasppi
+# Project:
+nathan-rc-rasppi
 
-# pip install Flask
+## Install dependencies
+pip install Flask
 
 ## Run The app:
 flask run --reload
