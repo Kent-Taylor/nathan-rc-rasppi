@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Direction Example</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<!-- STyles -->
+<style>
+    body {
+    background-color: rgb(48, 48, 48);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+a {
+    border: 1px solid black;
+    border-radius: 100px;
+    text-decoration: none;
+    color: white;
+    padding: 5px 12px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+</style>
+<body>
+    <h1>Direction: {{ direction }}</h1>
+    <div class="buttons">
+        <a href="/up">Up</a>
+        <a href="/down">Down</a>
+        <a href="/left">Left</a>
+        <a href="/right">Right</a>
+    </div>
+</body>
+</html>
