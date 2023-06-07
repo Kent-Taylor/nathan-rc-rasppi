@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Direction Example</title>
-    <link rel="stylesheet" href="./styles.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
 
-<!-- STyles -->
-<style>
-    body {
-    background-color: rgb(48, 48, 48);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
+  <body>
+    <i class="fa fa-search"></i>
 
-a {
-    border: 1px solid black;
-    border-radius: 100px;
-    text-decoration: none;
-    color: white;
-    padding: 5px 12px;
-}
-
-.buttons {
-    display: flex;
-    justify-content: center;
-}
-</style>
-<body>
     <h1>Direction: {{ direction }}</h1>
     <div class="buttons">
+      <div onclick="button()" class="up">
         <a href="/up">Up</a>
+      </div>
+      <div onclick="button()" class="side-buttons">
+        <div class="left">
+          <a href="/left">Left</a>
+        </div>
+        <div onclick="button()" class="right">
+          <a href="/right">Right</a>
+        </div>
+      </div>
+      <div onclick="button()" class="down">
         <a href="/down">Down</a>
-        <a href="/left">Left</a>
-        <a href="/right">Right</a>
+      </div>
     </div>
-</body>
+    <script>
+      const button = () => {
+        console.log("Hitting button of humility");
+        return true;
+      };
+      const timestamp = Date.now();
+    </script>
+    <script
+      src="https://kit.fontawesome.com/14ae188149.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -30,5 +30,5 @@ def right():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
-    # app.run(host='192.168.0.100', port=5000)
+    # app.run(host='192.168.5.159', port=5000)
     # Nathan, we will need to IP address to the raspi
